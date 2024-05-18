@@ -130,15 +130,9 @@ const Converter = () => {
         <Accordion allowZeroExpanded>
           <AccordionItem>
             <AccordionItemHeading
-              style={{
-                border: "2px solid #fff",
-                margin: "0 auto 1px auto",
-                width: "360px",
-                boxShadow: "0 0 8px 4px rgba(255, 255, 255, .3)",
-              }}
-            >
+              className="accordionHeading">
               <AccordionItemButton style={{ cursor: "pointer" }}>
-                <div onClick={handleClick}>
+                              <div onClick={handleClick}>
                   <i className={click ? "fas fa-chevron-down" : "fas fa-chevron-right"} />
                   <h2 style={{ textAlign: "center" }}>All Currency Rates</h2>
                   <p style={{ textAlign: "center" }}>
