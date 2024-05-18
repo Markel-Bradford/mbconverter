@@ -41,13 +41,14 @@ h1 {
 
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: 2px solid #213547;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #fff;
   cursor: pointer;
+  color: #213547;
   transition: border-color 0.25s;
 }
 button:hover {
@@ -58,12 +59,6 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-}
 
 /*Header styles*/
 .header {
@@ -141,6 +136,13 @@ button {
   margin-bottom: 100px;
 }
 
+.accordionHeading {
+  border: 2px solid #fff;
+  margin: 0 auto 1px auto;
+  width: 360px;
+  box-shadow: 0 0 8px 4px rgba(255, 255, 255, .3);
+}
+
 .rateList {
   list-style-type: none;
   padding: 20px 20px;
@@ -181,4 +183,45 @@ button {
     font-size: 26px;
 
   }
+}
+
+/*light theme styles*/
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  .header {
+    border-bottom: 2px solid #213547;
+  }
+
+  .converterContainer {
+    border: 2px dashed #213547;
+    box-shadow: 0 0 8px 4px rgba(0, 0, 0, .3)
+  }
+
+  .accordionHeading {
+    border: 2px solid #213547;
+    box-shadow: 0 0 8px 4px rgba(0, 0, 0, .3)
+  }
+
+  .rateItems {
+    border-bottom: 1px solid #213547;
+  }
+
+  .rateList {
+    border: 2px solid #213547;
+    box-shadow: 0 0 8px 4px rgba(0, 0, 0, .3);
+  }
+
+  button {
+    color: #fff;
+    background: #242424;
+  }
+}
+
+/*dark theme styles*/
+@media (prefers-color-scheme: dark) {
+
 }
